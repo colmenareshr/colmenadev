@@ -1,25 +1,16 @@
 import React from 'react';
+import Navbar from '../Navbar';
 
 const Header = () => {
   return (
-    <div className='bg-[#161b22]'>
-      <header className='grid justify-items-center p-6'>
-        <div className=''>
-          <img 
-          className='rounded-full'
-          src='https://github.com/colmenareshr.png' 
-          alt='Humberto Colmenares de colmenaDev' 
-          height={100}
-          width={100}
-          />
-        </div>
-        <nav>
-          <ul class="flex items-center space-x-4">
-            <li><p style={{color:'white'}}>@colmenaDev</p></li>
-          </ul>
-        </nav>
-      </header>
-    </div>
+    <header className=' grid place-items-start items-center grid-cols-2 m-5 rounded-3xl p-4 bg-black'>
+      <div className='flex items-center justify-center gap-3'>
+        <h1 className='text-2xl text-opacity-90 '>
+          <a href='/'>colmenaDev</a>
+        </h1>
+      </div>
+      <Navbar />
+    </header>
   );
 };
 
