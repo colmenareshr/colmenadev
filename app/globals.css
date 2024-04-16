@@ -15,23 +15,31 @@ h1 {
     text-wrap: balance;
   }
 
+  .hero-bg {
+    background: linear-gradient(90deg, #0F172A 67%, #D6BF63 33%);
+  }
+
   .my-photo__bg {
-    background-image: url('../public/flat-background.jpg');
+    background-image: url('../public/pattern-abstract.png');
     background-size: cover;
-    background-position: center;
+    background-position: right;
     backgroun-repeat: no-repeat;
   }
 
   .my-photo {
-    width: 15rem;
-    height: 15rem;
-    border-radius: 999px;
+    width: 9rem;
+    height: 9rem;
     background-image: url('https://github.com/colmenareshr.png');
     background-size: cover;
     background-position: center;
-    backgroun-repeat: no-repeat;
   }
-
-
+  /* Responsive classes */
+  @screen md {
+    .my-photo {
+      width: 20rem;
+      height: 20rem;
+      margin-left: -7rem;
+      box-shadow: rgba(6, 18, 63, 0.4) 0px 15px 25px -5px;
+    }
+  }
 }
-
