@@ -1,22 +1,24 @@
-import SocialProfile from '@/components/SocialProfile';
+import SocialProfile from "@/components/SocialProfile";
 
 export default function Home() {
   return (
-    <main className='md:min-h-screen max-w-full'>
-      <div className='container max-w-full bg-slate-900 md:min-h-screen flex flex-col md:flex-row md:items-center hero-bg px-8'>
-        <section className='container mx-auto md:w-3/4 flex flex-col space-y-3 p-8'>
-          <h1 className='text-balance text-left'>Humberto Colmenares </h1>
-          <h2 className='text-lg text-slate-200'>
-            Desarrollador Frontend y especialista en Wordpress
-          </h2>
-          <p className='text-balance'>
-            Te ayudo a desarrollar aplicaciones y sitios web modernos, SEO
-            optimizados y adaptados a dispositivos móviles.
-          </p>
-          <SocialProfile />
-        </section>
-        <section className='max-w-full md:min-h-screen flex items-center justify-center container mx-auto p-8 my-photo__bg'>
-          <figure className='my-photo'></figure>
+    <main>
+      <div className="container mx-auto flex min-h-screen max-w-fit justify-center p-6">
+        <section className="flex flex-col md:flex-row-reverse md:items-center md:justify-between">
+          <div>
+            <figure className="my-photo"></figure>
+          </div>
+          <div className="space-y-3 md:max-w-lg ">
+            <h1 className="text-balance text-left">Humberto Colmenares </h1>
+            <h2 className="text-xl font-semibold text-slate-200">
+              Desarrollador Frontend y especialista en Wordpress
+            </h2>
+            <p>
+              Te ayudo a desarrollar aplicaciones y sitios web modernos, SEO
+              optimizados y adaptados a dispositivos móviles.
+            </p>
+            <SocialProfile />
+          </div>
         </section>
       </div>
     </main>
