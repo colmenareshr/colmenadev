@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 body {
-  @apply bg-slate-900 text-slate-400 leading-relaxed antialiased selection:bg-teal-300 selection:text-teal-900;
+  @apply max-w-fit mx-auto bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900;
 }
 
 h1 {
   @apply text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl;
+}
+
+p {
+  @apply text-balance text-lg;
 }
 
 @layer utilities {
@@ -15,31 +19,33 @@ h1 {
     text-wrap: balance;
   }
 
-  .hero-bg {
-    background: linear-gradient(90deg, #0F172A 67%, #D6BF63 33%);
-  }
-
   .my-photo__bg {
-    background-image: url('../public/pattern-abstract.png');
+    background-image: url("../public/pattern-abstract.png");
     background-size: cover;
     background-position: right;
     backgroun-repeat: no-repeat;
   }
 
   .my-photo {
-    width: 9rem;
-    height: 9rem;
-    background-image: url('https://github.com/colmenareshr.png');
+    width: 6rem;
+    height: 6rem;
+    background-image: url("https://github.com/colmenareshr.png");
     background-size: cover;
     background-position: center;
+    border-radius: 50%;
+    border: 2px solid #d6bf63;
+    box-shadow:
+      inset -4px -4px 0 rgba(255, 255, 255, 0.7),
+      inset 8px 8px 0 rgba(0, 0, 0, 0.3);
   }
   /* Responsive classes */
   @screen md {
     .my-photo {
-      width: 20rem;
-      height: 20rem;
-      margin-left: -7rem;
-      box-shadow: rgba(6, 18, 63, 0.4) 0px 15px 25px -5px;
+      width: 12rem;
+      height: 12rem;
+    }
+    .hero-bg {
+      background: linear-gradient(90deg, #0f172a 67%, #d6bf63 33%);
     }
   }
 }
