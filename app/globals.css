@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply max-w-fit mx-auto bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900;
+  @apply mx-auto max-w-fit bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900;
 }
 
 h1 {
@@ -12,6 +12,15 @@ h1 {
 
 p {
   @apply text-balance text-lg;
+}
+
+.primary-button {
+  @components border : 3px solid var(--color-primary);
+  color: white;
+  background-color: var(--color-primary);
+  &:hover {
+    @apply bg-opacity-80;
+  }
 }
 
 @layer utilities {
